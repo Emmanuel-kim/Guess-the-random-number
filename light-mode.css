@@ -1,0 +1,131 @@
+body {
+  font-family: sans-serif;
+  width: 50%;
+  max-width: 800px;
+  min-width: 480px;
+  margin: 0 auto;
+}
+h5 {
+  color: #df3e1f;
+}
+#body {
+  text-align: center;
+}
+
+/* the dark mode */ 
+.light-mode {
+  background-color: white;
+  color: black;
+}
+#nightmode {
+  padding: 12px 12px 12px 30px;
+}
+input[type="radio"] {
+  cursor: pointer;
+  float: center;
+}
+/* input[type="radio"]:not(:checked)::-ms-check {
+  border-color: gray;
+}
+input[type="radio"]::-ms-check {
+  border-color: red;
+  color: red;
+} */
+/* input[type="radio"]:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #d1d3d1;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+} */
+input[type="radio"]:checked:after {
+  width: 12px;
+  height: 12px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #6689e5;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid #a0c952;
+}
+
+#form-1 {
+  position: absolute;
+  padding: 12px 30px;
+  width: 50%;
+  border: 1px solid #ccc;
+}
+#form-2 {
+  visibility: hidden;
+  position: absolute;
+  width: 50%;
+  padding: 12px 30px;
+  border: 1px solid #ccc;
+}
+
+input[type="text"] {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-style: bold;
+}
+/* input[type="submit"] {
+  margin-top: 10px;
+  background-color: #6689e5;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: center;
+} */
+
+input[type="button"] {
+  margin-top: 10px;
+  background-color: #6689e5;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: center;
+}
+input[type="button"]:hover {
+  background-color: #a0c952;
+}
+
+#result {
+  visibility: hidden;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 20px;
+  font-size: 18px;
+  font-style: bold;
+  color: white;
+  background-color: #df3e1f;
+}
+
+#no-name { 
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 5px;
+  font-size: 14px;
+  font-style: bold;
+  color: #ffffff; 
+  background-color: #df3e1f;
+}

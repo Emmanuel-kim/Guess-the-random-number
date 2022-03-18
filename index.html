@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Guessing Game</title>
+    <link rel="stylesheet" href="light-mode.css">
+    <link rel="stylesheet" href="dark-mode.css">
+</head>
+<body >
+    <div id ="body">
+        <h1>The Guessing Game </h1>
+        <p>We have generated a random number between 0  to 10.
+            see if you can guess the correct one. </p>
+        <h5>You have only 4 attempts!</h5>
+        
+        <div   id="no-name">  
+            <P id="msg"></P>
+        </div>
+
+        <!-- buttons for night and light mode -->
+        <div id="nightmode">
+        <form name="myForm">
+            <input type="radio" name="mode" id="dark"  onclick="nightmode()" value="light" >dark
+            <input type="radio" name="mode" id="dark" value="light" onclick="lightMode()"  >light
+          </form>
+        </div>
+
+       
+
+    <section>
+
+        <form id ="form-1" method="post" name="Form-1" onsubmit="return validateForm()" action=""  >
+            
+            <input type="text" id="playerName"  name="playerName" placeholder="Enter your name" required ><br>
+            <input type="button" id="start"  onclick="StartGame()" value ="Start Game">
+        </form>
+        
+
+        <form id="form-2">
+            <label for="guess">Enter your guess:</label>
+            <input type="number" id="guess" name="guess" placeholder="0" min="1" max="10"><br>
+
+            <input type="button" id="submitGuess" value ="Submit Guess">
+            <input type="button" id="tryAgain"  value ="Try Again">
+
+            <div id="result">
+                <p id="output-1"></p>
+                <p id="output"></p>
+            </div>
+        </form>
+    </section>
+
+
+    </div>
+    <script src="index.js"></script>
+    
+</body>
+</html>
